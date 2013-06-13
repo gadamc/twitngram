@@ -1,0 +1,1 @@
+{"index": "function(doc){ index('text', doc.text, {'store': 'yes'}); index('lon', doc.geo.coordinates[0], {'store': 'yes'}); index('lat', doc.geo.coordinates[1], {'store': 'yes'}); }"}
