@@ -1,5 +1,5 @@
 exports.ngram = function (doc, size) {
-    var chunk, ngram, process, size, tokenize, _i, _len, _ref, _results;
+    var chunk, ngram, process, tokenize, _i, _len, _ref, _results;
 
     chunk = function(arr, len) {
       var chunks, i, x;
@@ -50,7 +50,7 @@ exports.ngram = function (doc, size) {
       _results = [];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         ngram = _ref[_i];
-        _results.push([ngram.join(' '), doc]);
+        _results.push(ngram.join(' '));
       }
       return _results;      
     }

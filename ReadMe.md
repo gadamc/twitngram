@@ -22,13 +22,16 @@ Here's a play-by-play of what I'm doing:
 * delete 1/2/3/4/5grams/text map-reduce views
 * create new map (nopoliticalinfo) 
 
-* use geoconvert.py
+* use heroku to run job to process data
+* use geoconvert.py in herokuapp
     * this takes each document from nopoliticalinfo, uses the geonames.org service to reversegeocode and saves back to the DB via bulk save operation
 
 
 * create new map based on Max's original 1/2/3/4/5grams, called bigindexgeo
     * using support for CommonJS. 
-    * indexes n-grams and i
+    * indexes n-grams from 1gram to 5gram
+
+* 
 
 
 
