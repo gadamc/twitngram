@@ -1,6 +1,6 @@
 function(doc){
 
-  if(doc.text && doc.countryName && doc.adminName1){
+  if(doc.text && doc.countryName && doc.hasOwnProperty('adminName1')){
 
     var ngram = require('views/lib/ngram').ngram;
     
