@@ -11,7 +11,7 @@ function(doc){
 
       for(var k = 0; k < results.length; k++)
       
-        emit( [doc.countryName, doc.adminName1, i, results[k]], doc.text );    
+        emit( [i, results[k], doc.countryName, doc.adminName1], doc.text );    
     }
 
   }
