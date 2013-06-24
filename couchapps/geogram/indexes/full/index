@@ -1,0 +1,7 @@
+function(doc){
+  if(doc.hasOwnProperty('text') && doc.hasOwnProperty('countryName') && doc.hasOwnProperty('adminName1')){
+    index('text', doc.text, {'store': 'yes'}); 
+    index('countryName', doc.countryName, {'store': 'yes'}); 
+    index('adminName1', doc.adminName1, {'store': 'yes'});
+  }
+}
